@@ -1,6 +1,6 @@
 // Dialog.module.scss
 
-$backdrop-color: rgba(0, 0, 0, 0.7);
+$backdrop-color: rgb(0 0 0 / 70%);
 $dialog-background: #fff;
 $dialog-padding: 20px;
 $dialog-border-radius: 8px;
@@ -22,7 +22,7 @@ $dialog-border-radius: 8px;
   background-color: $dialog-background;
   padding: $dialog-padding;
   border-radius: $dialog-border-radius;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
   z-index: 1001;
   position: relative;
   width: 100%;

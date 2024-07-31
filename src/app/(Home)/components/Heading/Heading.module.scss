@@ -30,13 +30,13 @@
       background-color: $success;
     }
 
-    @media screen and (max-width: 360px) {
+    @media screen and (width <= 360px) {
       flex-direction: column;
       gap: 10px;
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (width <= 768px) {
     flex-direction: column;
     gap: 20px;
   }
