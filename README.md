@@ -1,34 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NextJS React For Students Management
+
+This project is a NextJS application that primarily utilizes React and client-side components, making REST requests to a backend service.
+
+## Features
+
+- Built with NextJS for optimal performance and SEO
+- Focuses on client-side rendering using React components
+- Makes REST API calls to a backend service for data fetching
+- Demonstrates effective use of React hooks and state management with Context API
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- Node.js (version lts)
+- npm or yarn
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
+   
+   git clone https://github.com/Mandy9943/students-management-front
+   
 
-[API routes](https://nextjs.org/docs/app/building-your-application/routing) can be accessed on [http://localhost:3000/api](http://localhost:3000/api). This endpoint can be edited in `app/api/route.ts`.
+2. Navigate to the project directory:
+   
+   cd students-management-front
+   
 
-The `app/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/app/building-your-application/routing) instead of React pages.
+3. Install dependencies:
+   
+   npm install
+   # or
+   yarn install
+   
 
-## Learn More
+4. Start the development server:
+   
+   npm run dev
+   # or
+   yarn dev
+   
 
-To learn more about Next.js, take a look at the following resources:
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## API Integration
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This app uses Axios for making REST requests to the backend service. The main configuration for the Axios instance is located in `services/index.ts`. To use the API, make sure to set the `NEXT_PUBLIC_API_URL` environment variable.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+NEXT_PUBLIC_API_URL=http://localhost:5050
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+This will ensure that the Axios instance is correctly configured with the base URL for your API.
+
+
+## Deployment
+
+To deploy your app, follow the [NextJS deployment documentation](https://nextjs.org/docs/deployment).
+
