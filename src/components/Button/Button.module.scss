@@ -1,0 +1,21 @@
+.button {
+  padding: 5px 8px;
+  border-radius: 2px;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+    transform: scale(1.03);
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}

@@ -1,0 +1,24 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  input {
+    font-size: small;
+  }
+}
+
+.formFooter {
+  display: flex;
+  justify-content: flex-end;
+
+  button {
+    background-color: $success;
+    color: $white;
+  }
+}
+
+.errorMessage {
+  font-size: smaller;
+  color: $danger;
+}

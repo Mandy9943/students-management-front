@@ -1,0 +1,44 @@
+// Dialog.module.scss
+
+$backdrop-color: rgba(0, 0, 0, 0.7);
+$dialog-background: #fff;
+$dialog-padding: 20px;
+$dialog-border-radius: 8px;
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $backdrop-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.dialog {
+  background-color: $dialog-background;
+  padding: $dialog-padding;
+  border-radius: $dialog-border-radius;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.container {
+  margin-top: 20px;
+}

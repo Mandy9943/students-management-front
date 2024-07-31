@@ -1,0 +1,47 @@
+.heading {
+  background-color: $primary;
+  border-radius: 2px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .title {
+    color: $white;
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .mainButtons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    button {
+      color: white;
+      font-weight: bold;
+    }
+
+    .deleteButton {
+      background-color: $danger;
+    }
+
+    .newButton {
+      background-color: $success;
+    }
+
+    @media screen and (max-width: 360px) {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.dialogTitle {
+  margin-bottom: 20px;
+}

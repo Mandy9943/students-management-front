@@ -1,0 +1,25 @@
+.dialogTitle {
+  margin-bottom: 20px;
+}
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+  margin-top: 30px;
+
+  button {
+    width: 60px;
+    justify-content: center;
+
+    align-items: center;
+
+    &:first-child {
+      background-color: $success;
+      color: $white;
+    }
+    &:last-child {
+      background-color: $danger;
+      color: $white;
+    }
+  }
+}
